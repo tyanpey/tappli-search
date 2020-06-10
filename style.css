@@ -1,6 +1,7 @@
 
 * {
   font-family: sans-serif;
+  -webkit-appearance: none;
 }
 
 body {
@@ -67,14 +68,22 @@ h2 {
 
 input {
   display: block;
+  border-radius: 5px;
+  border: 2.5px solid black;
   margin: 15px 0;
   width: 100%;
   max-width: 500px;
   height: 30px;
+
+  text-indent: 10px;
 }
 
 button {
   margin: 5px 0;
+  border: none;
+  padding: 10px;
+  background-color: #EAEAEF;
+  color: #545454;
 }
 
 
