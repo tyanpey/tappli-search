@@ -5,6 +5,7 @@
     <title>たっぷりサーチ</title>
    <script type="text/javascript" src="js.js"></script>
    <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   </head>
   <body>
@@ -14,22 +15,29 @@
           <h1>たっぷりサーチ</h1>
           <h2>Tappli Search</h2>
         </div>
-        <div class="line"></div>
         <div class="description">
           <p>
             <span class="bigger">リサーチをたっぷりしたい時に使えます。</span><br>
-            検索してみたい検索ワードを全て入力して、「たっぷりサーチ!」を押してください。<br>
-            全てのキーワードでGoogle検索タブが開きます。<br>
-            <strong>* ポップアップ・ブロックが発動する場合は、許可してください。</strong>
+            <div class="flex"><span class="number">1.</span><p>検索してみたい検索ワードを入力してテキストボックス横の矢印を押すと、新しいタブで検索します。</p></div>
+            <div class="flex"><span class="number">2.</span><p>検索したいキーワードを複数入力して、「たっぷりサーチ！」をクリックすると、
+            全てのキーワードを一気に新しいタブで開きます。</p></div>
+            <div class="flex"><span class="number">3.</span><p>すでに検索したキーワードは「リサーチ済み」マークされるので、どこまで調べたかを把握できます。</p></div>
           </p>
+          <strong>* ポップアップ・ブロックが発動する場合は、許可してください。</strong>
         </div>
 
       </div>
 
       <div class="form-section">
         <h3>検索ワードを設定</h3>
-        <div id="forms">
-          <input type="text" name="" value="" class="form" placeholder="検索ワードを入力">
+        <div class="forms">
+          <div class="form-wrap">
+            <div class="indicator">
+              <p>リサーチ済</p>
+            </div>
+            <input type="text" name="" value="" class="form-input" placeholder="検索ワードを入力">
+            <button class="search-one" id="first-button">→</button>
+          </div>
         </div>
         <button id="add">検索ワードを追加</button>
       </div>
@@ -43,3 +51,42 @@
 
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->
