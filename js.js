@@ -70,13 +70,16 @@ window.addEventListener('load', (event) => {
 
   });
 
-  forms_list = document.getElementsByClassName('form-input');
-  $(document).on('keyup', function (e) {
-    if (e.keyCode === 13 && $(forms_list).is(':focus')) {
-      addedFild = addField();
-      addedField.focus()
-    }
-});
+
+  // detect enter and add field
+  
+  // forms_list = document.getElementsByClassName('form-input');
+  // $(document).on('keyup', function (e) {
+  //   if (e.keyCode === 13 && $(forms_list).is(':focus')) {
+  //     addedFild = addField();
+  //     addedField.focus()
+  //   }
+  // });
 
 
 
